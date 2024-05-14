@@ -1,0 +1,21 @@
+.header_search {
+  display: none;
+}
+
+.header_icons .material-icons {
+  display: none;
+}
+
+/* 질문 - 순서 바뀌어야함 */
+.header_icons .display-m {
+  display: block;
+}
+
+.header_icons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sidebar {
+  display: none;
+}
