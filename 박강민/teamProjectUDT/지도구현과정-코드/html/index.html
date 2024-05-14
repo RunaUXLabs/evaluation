@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kakao 지도 시작하기</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+  <div id="map" style="width:1345px;height:800px;"></div>
+  <script>
+    const supabaseUrl = 'https://ticzcxszdgryyieydcjb.supabase.co';
+    // 슈퍼베이스키 오류로 수정 필요
+    // const supabaseKey = process.env.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpY3pjeHN6ZGdyeXlpZXlkY2piIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTUyMTkyOTksImV4cCI6MjAzMDc5NTI5OX0.PX0OhLR9KCbnmjsp1cshVTcZifAzerW3Si5G_ - 54Ucs
+    const supabase = createClient(supabaseUrl, supabaseKey);
+  </script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8fa566ae5d765eb1a068de2fe2240a95"></script>
+  <script>
+    var container = document.getElementById('map');
+    var options = {
+      center: new kakao.maps.LatLng(36.6350069986794, 127.457807092028),
+      level: 1
+    };
+
+    var map = new kakao.maps.Map(container, options);
+
+    async function refreshHistory() {
+      let { data: record, error } = await client.from("coordinates").select("*");
+      console.log('record', record);
+      let tag = "";
+      for (let i = 0; i < record.length; i++) {
+        tag += `<h2>${record[i].title}</h2>${record[i].body}`;
+      }
+      document.querySelector("#coordinates").innerHTML = tag;
+    }
+
+    refreshHistory();
+
+
+
+    // 마커를 표시할 위치와 title 객체 배열입니다 
+    var positions = [
+      {
+        title: '카카오',
+        latlng: new kakao.maps.LatLng(36.6350069986794, 127.457807092028)
+      }
+    ];
+
+    // 마커 이미지의 이미지 주소입니다
+    // var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+    const imgPath = "/img/marker.png";
+    for (var i = 0; i < positions.length; i++) {
+
+      // 마커 이미지의 이미지 크기 입니다 
+      var imageSize = new kakao.maps.Size(24, 35);
+
+      // 마커 이미지를 생성합니다    
+      // var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+      var markerImage = new kakao.maps.MarkerImage(imgPath, imageSize);
+
+      // 마커를 생성합니다
+      var marker = new kakao.maps.Marker({
+        map: map, // 마커를 표시할 지도
+        position: positions[i].latlng, // 마커를 표시할 위치
+        title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+        image: markerImage // 마커 이미지 
+      });
+    }
+  </script>
+</body>
+
+</html>

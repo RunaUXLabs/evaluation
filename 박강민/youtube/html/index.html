@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/youtube/css/style.css">
+  <link rel="stylesheet" media="all and (max-width:767px)" href="/youtube/css/style_m.css">
+  <link rel="stylesheet" media="all and (max-width:1199px)" href="/youtube/css/style_t.css">
+  <title>youtube clone</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="header_left">
+      <i id="menu" class="material-icons">menu</i>
+      <img src="/youtube/image/youtube_logo.png" alt="youtube logo">
+    </div>
+
+    <div class="header_search">
+      <form action="#">
+        <input type="text" placeholder="검색">
+        <!-- <img src="/youtube/image/icon/search2.svg" alt="검색돋보기"> -->
+        <button><i class="material-icons">search</i></button>
+      </form>
+      <!-- <img src="/youtube/image/icon/mic.png" alt="mic"> -->
+
+    </div>
+
+    <div class="header_icons">
+      <i class="material-icons display-m">search</i>
+      <i class="material-icons">videocam</i>
+      <i class="material-icons">apps</i>
+      <i class="material-icons display-m">notifications</i>
+      <i class="material-icons">account_circle</i>
+
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="mainBody">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="sidebar_catergories">
+        <div class="sidebar_category">
+          <!-- <i class="material-icons">home</i> -->
+          <img src="/youtube/image/icon/home.png" alt="홈">
+          <span>홈</span>
+        </div>
+        <div class="sidebar_category">
+          <!-- <i class="material-icons">local_fire_department</i> -->
+          <img src="/youtube/image/icon/Shorts.png" alt="쇼츠">
+          <span>Shorts</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/subscriptions.png" alt="구독">
+          <span>구독</span>
+        </div>
+        <hr>
+        <div class="sidebar_category_text">
+          <span>나</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/channel.png" alt="채널">
+          <span>채널</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/history.png" alt="시청기록">
+          <span>시청 기록</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/queue.png" alt="재생목록">
+          <span>재생목록</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/yourVideos.png" alt="내 동영상">
+          <span>내 동영상</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/tcon.png" alt="나중에 볼 동영상">
+          <span>나중에 볼 동영상</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/liked.png" alt="좋아요 표시한 동영상">
+          <span>좋아요 표시한 동영상</span>
+        </div>
+        <hr>
+        <div class="sidebar_category_text">
+          <span>구독</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/profile.png" alt="유튜버">
+          <span>유튜버</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/profile.png" alt="유튜버">
+          <span>유튜버</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/profile.png" alt="유튜버">
+          <span>유튜버</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/profile.png" alt="유튜버">
+          <span>유튜버</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/more.png" alt="더보기">
+          <span>100개 더보기</span>
+        </div>
+        <hr>
+        <div class="sidebar_category_text">
+          <span>탐색</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/hit.png" alt="인기 급상승">
+          <span>인기 급상승</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/shopping.png" alt="쇼핑">
+          <span>쇼핑</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/music.png" alt="음악">
+          <span>음악</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/movie.png" alt="영화">
+          <span>영화</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/live.png" alt="실시간">
+          <span>실시간</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/gaming.png" alt="게임">
+          <span>게임</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/sports.png" alt="스포츠">
+          <span>스포츠</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/podcast.png" alt="팟캐스트">
+          <span>팟캐스트</span>
+        </div>
+        <hr>
+        <div class="sidebar_category_text">
+          <span>Youtube 더보기</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/studio.png" alt="스튜디오">
+          <span>Youtube 스튜디오</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/music.png" alt="뮤직">
+          <span>Youtube 뮤직</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/kids.png" alt="키즈">
+          <span>Youtube Kids</span>
+        </div>
+        <hr>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/settings.png" alt="설정">
+          <span>설정</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/report.png" alt="신고기록">
+          <span>신고 기록</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/help.png" alt="고객센터">
+          <span>고객센터</span>
+        </div>
+        <div class="sidebar_category">
+          <img src="/youtube/image/icon/feedback.png" alt="의견 보내기">
+          <span>의견보내기</span>
+        </div>
+        <hr>
+        <div class="sidebar_footer">
+          <div class="info">
+            <a href="#"><span>정보</span></a> <a href="#"><span>보도자료</span></a> <a href="#"><span>저작권</span></a> <a
+              href="#"><span>문의하기</span></a> <a href="#"><span>크리에이터</span></a> <a href="#"><span>광고</span></a> <a
+              href="#"><span>개발자</span></a>
+          </div>
+          <div class="info">
+            <a href="#"><span>약관</span></a> <a href="#"><span>개인정보처리방침</span></a><br> <a href="#"><span>정책 및
+                안전</span></a><br>
+            <a href="#"><span>Youtube 작동의 원리</span></a><br> <a href="#"><span>새로운 기능 테스트하기</span></a>
+          </div>
+          <p>© 2024 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway, Mountain View CA 94043, USA, 0807-882-594
+            (무료),
+            yt-support-solutions-kr@google.com, 호스팅: Google LLC,<span style="color: #3EA6FF;">사업자정보</span>, <span
+              style="color: #3EA6FF;">불법촬영물
+              신고</span><br>
+            크리에이터들이 유튜브 상에 게시, 태그 또는 추천한 상품들은 판매자들의 약관에 따라 판매됩니다. 유튜브는 이러한 제품들을 판매하지 않으며, 그에 대한 책임을 지지 않습니다.</p>
+        </div>
+      </div>
+    </div>
+    <!-- videos -->
+    <div class="videos">
+      <!-- aside -->
+      <div class="contents_tag">
+        <aside>
+          <button>전체</button>
+          <button>게임</button>
+          <button>음악</button>
+          <button>믹스</button>
+          <button>라이브</button>
+          <button>음악</button>
+        </aside>
+      </div>
+      <div class="video_container">
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/AUci5aV2y0w?si=AnsZ95ije0HjLnEt&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetfdur adipisicing elit. Reprehenderit temporibus, eos suscipit
+              nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/Ngc1yGCGzzw?si=du4cBBKQUY8FkSm4&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/4oMdAM5x3nM?si=ZzNsoBi0M8z-YoNA&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/-pvLDeYCh2s?si=qkfXLsDOXCxD90mK&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur simidddlique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/wZpb3_DpQbQ?si=bgSwD8XZiTO8TBrU&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequasduntur similiquasde odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/NJA1SbQJVpk?si=bOwaMsTLsMJ4FLLm&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/QNy9tJ7HlwU?si=nVWfuzOUvS-ejSgc&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/_GTqWBq01qI?si=bJQzK1mLw9fxVFe6&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/bHi-1Ekk3KE?si=UHYFQk-4Xc9uLOWu&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/zqoRcsv_EZA?si=FABr1Bq1YFiegoez&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/_f6Hrq_5slc?si=EO7J3RmdMuEvr0Tc&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+        <!-- single video Starts -->
+        <div class="video">
+          <div class="video_thumbnail">
+            <!-- <img src="/youtube/src/video_thumbnail.png" alt=""> -->
+            <iframe width="310" height="170"
+              src="https://www.youtube.com/embed/h-voFZ5tQBk?si=8ZUMWzlN4ax3bxP4&amp;controls=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video_details">
+            <div class="author">
+              <img src="/youtube/image/icon/profile.png" alt="프로필">
+            </div>
+          </div>
+          <div class="title">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus, eos suscipit nostrum
+              eaque molestiae. Consequuntur similique odio</h3>
+            <a href="">결속밴드</a>
+            <span>조회수 90만회 · 3달 전</span>
+          </div>
+        </div>
+        <!-- single video ends -->
+
+      </div>
+    </div>
+  </div>
+
+  <!-- script -->
+  <script src="/youtube/js/index.js"></script>
+</body>
+
+</html>

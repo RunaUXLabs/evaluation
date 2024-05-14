@@ -1,0 +1,16 @@
+  .header_search {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .show-sidebar {
+    display: inline;
+    position: fixed;
+    top: 4.4rem;
+    height: auto;
+    transform: initial;
+    transition: 0.3s;
+  }
